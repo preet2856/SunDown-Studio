@@ -448,7 +448,7 @@ nav h3 {
 .footer-right {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
 	padding: 1rem;
 	gap: 1rem;
 }
@@ -461,6 +461,7 @@ nav h3 {
 .footer-form {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	border-bottom: 0.5px solid #EFEAE3;
 }
 
@@ -674,7 +675,16 @@ nav h3 {
 	}
 
 	.swiper-slide {
-		width: 50%;
+		width: 70%;
+	}
+
+	.card {
+		gap: 2vw !important;
+		margin-right: 50px !important;
+	}
+
+	.card p {
+		font-size: 3.5vw;
 	}
 
 	#part5 {
@@ -687,34 +697,31 @@ nav h3 {
 	}
 
 	.footer-top {
-		margin-top: 2rem;
-		gap: 1rem;
-		padding: 1rem;
+		margin-top: 10vw;
+		justify-content: center;
+		gap: 3vw;
+		padding: 1vw;
 	}
 
 	.footer-right {
-		padding: 0.9rem;
+		padding: 1vw;
 	}
 
 	.footer-right p {
-		font-size: 1rem;
+		font-size: 4vw;
 	}
 
 	.footer-form input {
-		padding: 0.7rem 1rem 0.7rem 0;
-		font-size: 1.1rem;
+		padding: 1.7vw 2vw 1.7vw 0;
+		font-size: 4vw;
 	}
 
 	.footer-form a i {
-		font-size: 1.2rem;
+		font-size: 4vw;
 	}
 
 	.footer-wrapper {
 		padding: 0vw 2.5vw;
-	}
-
-	.footer-wrapper h1 {
-		font-size: 6.5rem;
 	}
 
 	#footer-div {
@@ -732,12 +739,8 @@ nav h3 {
 	}
 
 	#footer-bottom {
-		row-gap: 0;
-		gap: 0 1rem;
-		display: flex;
-		flex-wrap: wrap;
-		font-size: 1.2rem;
-		justify-content: center;
+		gap: 0 4vw;
+		font-size: 3vw;
 	}
 
 	#footer-bottom p a {
