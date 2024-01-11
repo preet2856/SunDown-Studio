@@ -144,7 +144,6 @@ nav h3 {
 	width: 100%;
 	height: 100%;
 	filter: blur(20px);
-	/* background-color: #FE320A; */
 	background: linear-gradient(#FE320A, #fe6c0a);
 	border-top-left-radius: 50%;
 	border-bottom-left-radius: 50%;
@@ -321,7 +320,7 @@ nav h3 {
 .elem {
 	position: relative;
 	width: 100%;
-	height: 150px;
+	height: 130px;
 	padding: 0 2vw;
 	display: flex;
 	overflow: hidden;
@@ -332,7 +331,7 @@ nav h3 {
 .elem h2 {
 	position: relative;
 	z-index: 9;
-	font-size: 3vw;
+	font-size: 3rem;
 }
 
 .elem .overlay {
@@ -343,10 +342,26 @@ nav h3 {
 	top: -100%;
 	transition: all ease 0.25s;
 	background-color: orange;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .elem:hover .overlay {
 	top: 0;
+}
+
+.overlay p {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 1rem;
+}
+
+.overlay p span {
+	font-size: 1rem;
+	font-weight: 200;
 }
 
 #fixed-image {
@@ -555,10 +570,9 @@ nav h3 {
 
 	nav h3 {
 		display: block;
-		font-size: 4vw;
-		padding: 3vw 5vw;
+		font-size: 7vw;
+		padding: 2vw 3vw;
 		font-weight: 200;
-		padding-left: 10vw;
 		border-radius: 50px;
 		border: 1px solid #ababab;
 	}
@@ -570,9 +584,6 @@ nav h3 {
 		padding: 7vw 5vw;
 		padding-bottom: 10vw;
 		z-index: 9;
-		display: flex;
-		align-items: flex-end;
-		justify-content: space-between;
 		flex-direction: column-reverse;
 		border-bottom: 1px solid #0000003c;
 	}
@@ -585,12 +596,10 @@ nav h3 {
 
 	#center h1 {
 		font-size: 17vw;
-		text-align: right;
 		line-height: 15vw;
 	}
 
 	#part1 video {
-		position: relative;
 		width: 92%;
 		height: 70vh;
 		margin-top: 4vw;
@@ -600,56 +609,21 @@ nav h3 {
 		object-position: center;
 	}
 
-	#part2 {
-		position: relative;
-		width: 100%;
-		min-height: 100vh;
-		padding: 8vw 0;
-		background-color: #EFEAE3;
-	}
-
-	#moving-text {
-		overflow-x: auto;
-		white-space: nowrap;
-	}
-
-	#moving-text::-webkit-scrollbar {
-		display: none;
-	}
-
-	.con {
-		display: inline-block;
-		white-space: nowrap;
-		animation-name: move;
-		animation-duration: 10s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-	}
-
 	#moving-text h1 {
 		font-size: 15vw;
-		display: inline-block;
 	}
 
-	#gola {
-		display: inline-block;
-		width: 25px;
-		height: 25px;
+	#dot {
+		width: 30px;
+		height: 30px;
 		margin: 2vw 2vw;
-		border-radius: 50%;
-		background-color: #FE320A;
 	}
 
 	#part2-bottom {
-		position: relative;
-		width: 100%;
 		height: 90vh;
 		padding: 10vw 4vw;
-		z-index: 9;
-		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		justify-content: space-between;
 	}
 
 	#part2-bottom h1 {
@@ -660,33 +634,115 @@ nav h3 {
 
 	#bottom-part2 {
 		width: 70%;
+		margin-top: 5rem;
 	}
 
 	#bottom-part2 img {
-		width: 100%;
 		border-radius: 10px;
 	}
 
 	#bottom-part2 p {
 		font-size: 3vw;
-		margin-top: 2vw;
-		font-weight: 200;
 	}
 
 	#part2 #gooey {
-		position: absolute;
 		width: 62vw;
 		height: 62vw;
-		top: 58%;
-		left: 25%;
-		border-radius: 50%;
-		filter: blur(20px);
-		animation-name: gooey;
-		animation-duration: 6s;
-		animation-direction: alternate;
-		animation-iteration-count: infinite;
-		animation-timing-function: ease-in-out;
-		background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+	}
+
+	.elem {
+		height: 100px;
+	}
+
+	.elem h2 {
+		font-size: 2rem;
+	}
+
+	#fixed-image {
+		width: 30vw;
+		height: 45vw;
+		top: 30%;
+	}
+
+	#part4 {
+		height: 60vh;
+		padding: 5vw 2vw;
+	}
+
+	.swiper {
+		height: 70%;
+	}
+
+	.swiper-slide {
+		width: 50%;
+	}
+
+	#part5 {
+		height: 60vh;
+	}
+
+	#footer {
+		height: 60%;
+		justify-content: space-between;
+	}
+
+	.footer-top {
+		margin-top: 2rem;
+		gap: 1rem;
+		padding: 1rem;
+	}
+
+	.footer-right {
+		padding: 0.9rem;
+	}
+
+	.footer-right p {
+		font-size: 1rem;
+	}
+
+	.footer-form input {
+		padding: 0.7rem 1rem 0.7rem 0;
+		font-size: 1.1rem;
+	}
+
+	.footer-form a i {
+		font-size: 1.2rem;
+	}
+
+	.footer-wrapper {
+		padding: 0vw 2.5vw;
+	}
+
+	.footer-wrapper h1 {
+		font-size: 6.5rem;
+	}
+
+	#footer-div {
+		top: -20%;
+		width: 150vw;
+		height: 25vh;
+	}
+
+	.gooey1 {
+		rotate: 20deg;
+	}
+
+	.gooey2 {
+		rotate: -20deg;
+	}
+
+	#footer-bottom {
+		row-gap: 0;
+		gap: 0 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 1.2rem;
+		justify-content: center;
+	}
+
+	#footer-bottom p a {
+		text-decoration: none;
+		color: white;
 	}
 }
 
