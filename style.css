@@ -160,7 +160,7 @@ nav h3 {
 	animation-direction: alternate;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	background: linear-gradient(#FE320A, #fe3f0a);
+	background: linear-gradient(#FE320A, #FF9831);
 }
 
 #hero-3 {
@@ -341,7 +341,7 @@ nav h3 {
 	left: 0;
 	top: -100%;
 	transition: all ease 0.25s;
-	background-color: orange;
+	background-color: #FF9831;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -598,6 +598,13 @@ nav h3 {
 	#center h1 {
 		font-size: 17vw;
 		line-height: 15vw;
+	}
+
+	.hero-1,
+	.hero-2,
+	.hero-3 {
+		width: 50vw;
+		height: 50vw;
 	}
 
 	#part1 video {
